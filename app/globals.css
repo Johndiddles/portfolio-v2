@@ -7,3 +7,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  font-size: clamp(14px, calc(1vw + 1px), 16px);
+}
