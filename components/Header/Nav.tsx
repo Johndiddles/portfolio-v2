@@ -23,7 +23,7 @@ const Nav = () => {
       <ul
         ref={navListRef}
         className={`flex flex-col ${
-          isOpen ? "h-fit mt-5" : "h-0 max-h-0 overflow-hidden"
+          isOpen ? "h-fit mt-8" : "h-0 max-h-0 overflow-hidden"
         } lg:h-fit lg:max-h-fit lg:flex-row items-end gap-5 lg:gap-10 duration-500 ease-in-out`}
       >
         <li>
