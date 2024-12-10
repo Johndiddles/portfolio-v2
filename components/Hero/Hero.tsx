@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section className="">
       <Container>
-        <div className="pt-32 pb-20 lg:pb-32 lg:pt-[240px] text-center flex flex-col justify-center gap-6 md:gap-10">
+        <div className="h-screen max-h-[1000px] pt-32 pb-20 lg:pb-32 lg:pt-[240px] text-center flex flex-col justify-center gap-6 md:gap-10">
           <h1 className="font-jost hero_header font-medium flex mx-auto gap-2 md:gap-4 lg:gap-5">
             Hi, I am John, a{" "}
             <span className="min-w-fit">
@@ -14,19 +14,17 @@ const Hero = () => {
             </span>{" "}
             Engineer
           </h1>
-          <p className="text-sm sm:text-base md:text-xl lg:text-2xl leading-5 lg:leading-[48px]">
-            I code beautifully simple things, and I love what I do, with 3+
-            years of experience under my belt. Building user-friendly web apps,
-            and I love wielding JavaScript (React, Next.js, Node/Express) like a
-            magic wand. Plus, I&apos;m fluent in the language of the clouds,
-            thanks to AWS services like Amplify, Cognito, Lambda, and DynamoDB.
-            I started my coding journey on the frontend, sculpting pixel-perfect
-            designs with React. But then I discovered the full-stack symphony,
-            and now I relish being involved in every note, from conception to
-            deployment. When I&apos;m not knee-deep in code, you&apos;ll find me
-            tickling the ivories on my guitar or diving into the latest tech
-            trends. I&apos;m always eager to learn and collaborate, so
-            let&apos;s connect and chat code!
+          <p className="font-light text-base md:text-xl lg:text-2xl leading-[28px] sm:leading-[32px] md:leading-[40px] lg:leading-[48px] xl:leading-[50px] max-w-[96ch] mx-auto font-inter">
+            Results-driven Software Engineer with expertise in JavaScript,
+            TypeScript, React, Node.js, and AWS. Contributed to the
+            actualization of a $1.2M grant at Evon Medics LLC by automating data
+            recovery and restoring over 6,000 critical data points, while
+            re-engineering authentication workflows to enhance scalability for
+            clinical trials. At Broadshift Technologies, developed a shift
+            management system that optimized staff scheduling and reduced
+            operational costs by minimizing reliance on third-party services.
+            Proven track record in delivering scalable solutions, enhancing
+            workflows, and creating user-focused applications.
           </p>
         </div>
       </Container>
