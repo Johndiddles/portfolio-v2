@@ -1,10 +1,10 @@
 import React from "react";
 import Container from "../Container/Container";
-import arrowTopRightBrown from "@/assets/icons/arrow-top-right-brown.svg";
 import footerBulb from "@/assets/icons/footer-bulb.svg";
 import footerCrown from "@/assets/icons/footer-crown.svg";
 import { PillButton } from "../Buttons/Buttons";
 import Image from "next/image";
+import { FiArrowUpRight } from "react-icons/fi";
 
 const ContactSection = () => {
   return (
@@ -28,13 +28,13 @@ const ContactSection = () => {
 
           <PillButton
             variant="outline"
-            customStyle="border-[#C47B54] px-4 py-3"
+            customStyle="border-[#C47B54] px-5 py-3 duration-200 hover:bg-[#C47B54] hover:text-[#1E1E1E] text-[#C47B54] contact-btn"
           >
             <div className="flex items-center gap-2">
-              <p className="font-inter text-sm md:text-base text-center text-[#C47B54] font-semibold">
+              <p className="font-inter text-sm md:text-base text-center font-semibold duration-300">
                 Contact Me
               </p>
-              <Image src={arrowTopRightBrown} alt="arrow" />
+              <FiArrowUpRight className="text-lg md:text-2xl contact-btn-svg" />
             </div>
           </PillButton>
         </div>
