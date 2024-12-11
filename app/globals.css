@@ -11,14 +11,15 @@
 html {
   font-size: clamp(14px, calc(1vw + 1px), 16px);
   color: #1e1e1e;
-}
-
-body {
   scroll-behavior: smooth;
 }
 
 .hero_header {
-  font-size: clamp(1.5rem, calc(5vw), 4rem);
+  font-size: clamp(1.125rem, calc(5vw), 4rem);
+}
+
+.hero_caption {
+  font-size: clamp(0.75rem, calc(3vw), 1.5rem);
 }
 
 .contact_section_wrapper {
@@ -34,5 +35,4 @@ body {
 }
 .contact-btn:hover .contact-btn-svg {
   rotate: 45deg;
-  /* transition: 0.3s all ease-in-out; */
 }

@@ -8,7 +8,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 
 const ContactSection = () => {
   return (
-    <section className="bg-[#131313] contact_section_wrapper">
+    <section className="bg-[#131313] contact_section_wrapper" id="contact">
       <Container>
         <div className="py-11 sm:py-20 md:py-[120px] lg:py-[200px] flex flex-col gap-5 md:gap-8 items-center">
           <div className="text-white font-jost font-medium text-xl sm:text-3xl md:text-5xl lg:text-6xl text-center flex flex-col  gap-1 md:gap-4">

@@ -5,8 +5,8 @@ const Hero = () => {
   return (
     <section className="">
       <Container>
-        <div className="h-screen max-h-[568px] md:max-h-[1000px] pt-32 pb-20 lg:pb-32 lg:pt-[240px] text-center flex flex-col justify-center gap-6 md:gap-10">
-          <h1 className="font-jost hero_header font-medium flex mx-auto gap-2 md:gap-4 lg:gap-5">
+        <div className="h-screen max-h-[600px] md:max-h-[1000px] pt-32 pb-20 lg:pb-32 lg:pt-[240px] text-center flex flex-col justify-center gap-6 md:gap-10">
+          <h1 className="font-jost hero_header font-medium flex flex-wrap mx-auto justify-center gap-2 gap-y-0 md:gap-4 lg:gap-5">
             Hi, I am John, a{" "}
             <span className="min-w-fit">
               Full Stack
@@ -14,7 +14,7 @@ const Hero = () => {
             </span>{" "}
             Engineer
           </h1>
-          <p className="font-light text-base md:text-xl lg:text-2xl leading-[28px] sm:leading-[32px] md:leading-[40px] lg:leading-[48px] xl:leading-[50px] max-w-[96ch] mx-auto font-inter">
+          <p className="font-light hero_caption leading-[28px] sm:leading-[32px] md:leading-[40px] lg:leading-[48px] xl:leading-[50px] max-w-[96ch] mx-auto font-inter">
             Results-driven Software Engineer with expertise in JavaScript,
             TypeScript, React, Node.js, and AWS. Contributed to the
             actualization of a $1.2M grant at Evon Medics LLC by automating data

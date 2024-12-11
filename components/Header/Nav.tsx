@@ -1,13 +1,29 @@
 "use client";
-import React, { useRef, useState } from "react";
-import Link from "next/link";
+import React, {
+  Dispatch,
+  SetStateAction,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 import CloseIcon from "@/assets/icons/close.svg";
 import MenuIcon from "@/assets/icons/menu.svg";
 import Image from "next/image";
+import NavLink from "./NavLink";
 
-const Nav = () => {
+const Nav = ({
+  isOpen,
+  setIsOpen,
+}: {
+  isOpen: boolean;
+  setIsOpen: Dispatch<SetStateAction<boolean>>;
+}) => {
+  const [currentSection, setCurrentSection] = useState("");
   const navListRef = useRef<HTMLUListElement>(null);
-  const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    setCurrentSection(window?.location.hash.replace("#", ""));
+  }, []);
 
   return (
     <nav className="self-end duration-500 ease-in-out flex flex-col lg:block">
@@ -24,20 +40,36 @@ const Nav = () => {
         ref={navListRef}
         className={`flex flex-col ${
           isOpen ? "h-fit mt-8" : "h-0 max-h-0 overflow-hidden"
-        } lg:h-fit lg:max-h-fit lg:flex-row items-end gap-5 lg:gap-10 duration-500 ease-in-out`}
+        } lg:h-fit lg:max-h-fit lg:flex-row items-end gap-6 lg:gap-10 duration-500 ease-in-out`}
       >
-        <li>
-          <Link href="#about">About Me</Link>
-        </li>
-        <li>
-          <Link href="#works">Works</Link>
-        </li>
-        <li>
-          <Link href="#testimonials">Testimonials</Link>
-        </li>
-        <li>
-          <Link href="#contact">Contact</Link>
-        </li>
+        <NavLink
+          setIsOpen={setIsOpen}
+          currentSection={currentSection}
+          setCurrentSection={setCurrentSection}
+          href="#about"
+          label="About Me"
+        />
+        <NavLink
+          setIsOpen={setIsOpen}
+          currentSection={currentSection}
+          setCurrentSection={setCurrentSection}
+          href="#works"
+          label="Projects"
+        />
+        <NavLink
+          setIsOpen={setIsOpen}
+          currentSection={currentSection}
+          setCurrentSection={setCurrentSection}
+          href="#testimonials"
+          label="Testimonials"
+        />
+        <NavLink
+          setIsOpen={setIsOpen}
+          currentSection={currentSection}
+          setCurrentSection={setCurrentSection}
+          href="#contact"
+          label="Contact"
+        />
       </ul>
     </nav>
   );

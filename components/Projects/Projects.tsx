@@ -8,7 +8,7 @@ const Projects = () => {
   return (
     <section id="works" className="">
       <Container>
-        <div className="border-y py-8 md:py-12 md:pt-16">
+        <div className="border-y py-8 pt-16 md:py-12">
           <div>
             <PillButton variant="outline" text="Projects" disabled />
           </div>
