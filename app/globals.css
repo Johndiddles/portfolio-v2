@@ -20,3 +20,11 @@ body {
 .hero_header {
   font-size: clamp(1.5rem, calc(5vw), 4rem);
 }
+
+.contact_section_wrapper {
+  background-image: url("../assets/Images/footer-bg-left.svg"),
+    url("../assets/Images/footer-bg-right.svg");
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+  background-size: auto 75%, auto 75%;
+}
