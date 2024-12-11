@@ -46,12 +46,13 @@ export const ViewCodeButton = ({
 }: ViewProjectButtonProps) => {
   return (
     <a
-      className={`border border-[#1E1E1E] text-[#1E1E1E] bg-[#F8F8F8] rounded-[50px] px-10 py-4 font-inter font-medium cursor-pointer`}
+      className={`border border-[#1E1E1E] text-[#1E1E1E] bg-[#F8F8F8] rounded-[50px] px-6 py-3 font-inter font-medium cursor-pointer`}
       href={url}
+      target="_blank"
       {...props}
     >
       <div className="flex items-center gap-2">
-        <p className="font-inter text-sm md:text-base">{text}</p>
+        <p className="font-inter text-sm md:text-base text-center">{text}</p>
         <Image src={arrowTopRight} alt="arrow" />
       </div>
     </a>
@@ -70,10 +71,11 @@ export const ViewProjectButton = ({
         customStyle ? customStyle : ""
       }`}
       href={url}
+      target="_blank"
       {...props}
     >
-      <div className="flex items-center gap-2 rounded-[50px] px-10 py-4 bg-[#1E1E1E] text-[#F8F8F8] h-full w-full -translate-x-2 -translate-y-2 md:hover:translate-x-0 md:hover:translate-y-0 duration-500 cursor-pointer">
-        <p>{text}</p>
+      <div className="flex items-center gap-2 rounded-[50px] px-6 py-3 bg-[#1E1E1E] text-[#F8F8F8] h-full w-full -translate-x-2 -translate-y-2 md:hover:translate-x-0 md:hover:translate-y-0 duration-500 cursor-pointer">
+        <p className="font-inter text-sm md:text-base text-center">{text}</p>
         <Image src={arrowTopRightWhite} alt="arrow" />
       </div>
     </a>

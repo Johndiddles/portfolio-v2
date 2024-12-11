@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section className="">
       <Container>
-        <div className="h-screen max-h-[1000px] pt-32 pb-20 lg:pb-32 lg:pt-[240px] text-center flex flex-col justify-center gap-6 md:gap-10">
+        <div className="h-screen max-h-[568px] md:max-h-[1000px] pt-32 pb-20 lg:pb-32 lg:pt-[240px] text-center flex flex-col justify-center gap-6 md:gap-10">
           <h1 className="font-jost hero_header font-medium flex mx-auto gap-2 md:gap-4 lg:gap-5">
             Hi, I am John, a{" "}
             <span className="min-w-fit">

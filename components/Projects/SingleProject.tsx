@@ -55,7 +55,7 @@ const SingleProject = ({
             </p>
           </div>
 
-          <div className="absolute -bottom-0 mx-auto translate-y-[50%] w-full flex justify-around md:justify-start gap-8 md:gap-10 pr-10">
+          <div className="absolute -bottom-0 mx-auto translate-y-[50%] w-full flex justify-around md:justify-start gap-4 md:gap-10 pr-10">
             {canViewProject && (
               <ViewProjectButton text="View Project" url={project_live_url!} />
             )}
