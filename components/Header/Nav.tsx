@@ -26,7 +26,11 @@ const Nav = ({
   }, []);
 
   return (
-    <nav className="self-end duration-500 ease-in-out flex flex-col lg:block">
+    <nav
+      className={`self-center lg:self-center duration-500 ease-in-out flex flex-col justify-start lg:block ${
+        isOpen ? "mt-4" : ""
+      }`}
+    >
       <button
         className="block lg:hidden cursor-pointer place-self-end"
         onClick={() => setIsOpen((prev) => !prev)}
