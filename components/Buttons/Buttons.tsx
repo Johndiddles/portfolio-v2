@@ -3,18 +3,21 @@ import { ComponentProps, ReactNode } from "react";
 import arrowTopRightWhite from "@/assets/icons/arrow-top-right-white.svg";
 import arrowTopRight from "@/assets/icons/arrow-top-right.svg";
 import Image from "next/image";
+import { Loader2 } from "lucide-react";
 
 interface ButtonProps extends ComponentProps<"button"> {
   variant: "fill" | "outline";
   text?: string;
   children?: ReactNode;
   customStyle?: string;
+  isLoading?: boolean;
 }
 export const PillButton = ({
   variant = "outline",
   text,
   children,
   customStyle,
+  isLoading,
   ...props
 }: ButtonProps) => {
   return (
@@ -23,12 +26,18 @@ export const PillButton = ({
         variant === "outline"
           ? "border border-[#1E1E1E] text-[#1E1E1E]"
           : "bg-[#1E1E1EE9] text-[#F8F8F8] hover:bg-[#000000] duration-300 ease-in-out"
-      } rounded-[50px] px-10 py-4 font-inter font-medium cursor-pointer ${
+      } rounded-[50px] px-10 py-4 font-inter font-medium cursor-pointer flex justify-center items-center ${
         customStyle ? customStyle : ""
       }`}
       {...props}
     >
-      {children ? children : text ? text : null}
+      {isLoading ? (
+        <Loader2 className={`animate-spin`} />
+      ) : children ? (
+        children
+      ) : text ? (
+        text
+      ) : null}
     </button>
   );
 };

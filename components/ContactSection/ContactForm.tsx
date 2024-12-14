@@ -21,6 +21,8 @@ const ContactForm = ({ onClose }: { onClose: () => void }) => {
     message: "",
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const clearErrors = () => setFormErrors({ name: "", email: "", message: "" });
 
   const clearForm = () =>
@@ -36,6 +38,8 @@ const ContactForm = ({ onClose }: { onClose: () => void }) => {
       if (!validateForm()) {
         return;
       }
+
+      setIsSubmitting(true);
       const response = await fetch("/api/contact", {
         method: "POST",
         body: JSON.stringify(formDetails),
@@ -61,6 +65,8 @@ const ContactForm = ({ onClose }: { onClose: () => void }) => {
       }
     } catch (error) {
       console.log({ error });
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -237,6 +243,7 @@ const ContactForm = ({ onClose }: { onClose: () => void }) => {
         text="Submit"
         customStyle="font-bold font-poppins"
         onClick={onSubmit}
+        isLoading={isSubmitting}
       />
     </div>
   );
