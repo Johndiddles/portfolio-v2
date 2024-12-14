@@ -22,7 +22,7 @@ export const PillButton = ({
       className={`${
         variant === "outline"
           ? "border border-[#1E1E1E] text-[#1E1E1E]"
-          : "bg-[#1E1E1E] text-[#F8F8F8]"
+          : "bg-[#1E1E1EE9] text-[#F8F8F8] hover:bg-[#000000] duration-300 ease-in-out"
       } rounded-[50px] px-10 py-4 font-inter font-medium cursor-pointer ${
         customStyle ? customStyle : ""
       }`}

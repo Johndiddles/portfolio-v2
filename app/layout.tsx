@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header/Header";
 import { Inter, Poppins, Jost } from "next/font/google";
 import Footer from "@/components/Footer/Footer";
+import { Toaster } from "@/components/ui/toaster";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -43,6 +44,8 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+
+        <Toaster />
       </body>
     </html>
   );
