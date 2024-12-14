@@ -1,0 +1,104 @@
+.swiper-3d .swiper-slide-shadow-right {
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.95)
+  ) !important;
+}
+
+.swiper-3d .swiper-slide-shadow-left {
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.95),
+    rgba(255, 255, 255, 0.2)
+  ) !important;
+}
+
+.multi-item-carousel {
+  overflow: visible;
+  padding: 20px 0;
+}
+.multi-item-carousel .swiper-slide-active {
+  opacity: 1;
+}
+.multi-item-carousel .swiper-slide-prev,
+.multi-item-carousel .swiper-slide-next {
+  transform: translateY(0.5rem) scale(0.85) !important;
+}
+
+.swiper-pagination {
+  bottom: -1rem !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.swiper-pagination-bullet {
+  height: 20px !important;
+  width: 20px !important;
+}
+
+.swiper-pagination-bullet-active {
+  position: relative !important;
+  background: #1e1e1e20 !important;
+  height: 32px !important;
+  width: 32px !important;
+  align-self: center;
+}
+
+.swiper-pagination-bullet-active::after {
+  content: " ";
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1024px) {
+  .swiper-pagination-bullet {
+    height: 16px !important;
+    width: 16px !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    height: 24px !important;
+    width: 24px !important;
+  }
+
+  .swiper-pagination-bullet-active::after {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .multi-item-carousel {
+    padding: 0;
+  }
+  .multi-item-carousel .swiper-slide-prev,
+  .multi-item-carousel .swiper-slide-next {
+    display: none !important;
+  }
+
+  .swiper-pagination {
+    bottom: 0 !important;
+  }
+
+  .swiper-pagination-bullet {
+    height: 12px !important;
+    width: 12px !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    height: 18px !important;
+    width: 18px !important;
+  }
+
+  .swiper-pagination-bullet-active::after {
+    width: 9px;
+    height: 9px;
+  }
+}
