@@ -38,12 +38,12 @@ const SingleProject = ({
         </div>
 
         <div className="row-start-1 col-start-2 md:row-start-auto md:col-start-auto md:row-span-2 py-8 md:py-16 flex flex-col justify-center md:justify-end items-center font-inter font-bold text-xs border-l border-b border-l-[#1E1E1E] border-b-[#1E1E1E] md:border-b-0 md:border-l-0">
-          {`${index.toString().padStart(2, "0")}`}
+          {`${(index + 1).toString().padStart(2, "0")}`}
         </div>
 
         <div className="font-poppins p-6 pt-0 pb-20 md:p-10 lg:p-16 flex flex-col gap-8 border-t-0 border-b border-b-[#1E1E1E] md:border-y border-[#1E1E1E] mb-16 col-span-2 md:col-auto relative">
           <div className="flex flex-col gap-4">
-            <h3 className="text-xl lg:text-2xl font-semibold">NEEDS</h3>
+            <h3 className="text-xl lg:text-2xl font-semibold">DESCRIPTION</h3>
             <p className="text-justify text-xs sm:text-sm lg:text-base">
               {description}
             </p>
