@@ -27,7 +27,7 @@ export const sendEmail = async ({
     const response = await client.send({
       from: sender,
       to: recipients,
-      subject: `NEW PORTFOLIO CONTACT - ${name} - ${email}`,
+      subject: `MESSAGE FROM PORTFOLIO WEBSITE: - ${name} - ${email}`,
       text: message,
       category: "Portfolio Contacts",
     });
