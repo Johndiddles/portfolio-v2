@@ -44,13 +44,11 @@ const SingleProject = ({
         <div className="font-poppins p-6 pt-0 pb-20 md:p-10 lg:p-16 flex flex-col gap-8 border-t-0 border-b border-b-[#1E1E1E] md:border-y border-[#1E1E1E] mb-16 col-span-2 md:col-auto relative">
           <div className="flex flex-col gap-4">
             <h3 className="text-xl lg:text-2xl font-semibold">DESCRIPTION</h3>
-            <p className="text-justify text-xs sm:text-sm lg:text-base">
-              {description}
-            </p>
+            <p className="text-justify text-sm lg:text-base">{description}</p>
           </div>
           <div>
             <h3 className="text-xl lg:text-2xl font-semibold">TOOLS</h3>
-            <p className="text-justify text-xs sm:text-sm lg:text-base">
+            <p className="text-justify text-sm lg:text-base">
               {`${title} was built with ${tools.join(", ")}`}
             </p>
           </div>
