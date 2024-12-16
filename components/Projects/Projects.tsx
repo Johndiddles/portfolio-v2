@@ -6,7 +6,7 @@ import SingleProject from "./SingleProject";
 
 const Projects = () => {
   return (
-    <section id="works" className="">
+    <section id="works" className="pt-8 md:pt-12 lg:pt-16">
       <Container>
         <div className="border-y py-8 pt-16 md:py-12">
           <div>

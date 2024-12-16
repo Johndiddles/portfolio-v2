@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Container from "../Container/Container";
 import Logo from "./Logo";
 import Nav from "./Nav";
+import Link from "next/link";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -16,7 +17,9 @@ const Header = () => {
       <Container>
         <div className="flex items-start lg:items-center justify-between py-4 font-poppins">
           <div className="flex items-center justify-between w-full lg:w-fit">
-            <Logo />
+            <Link href="/">
+              <Logo />
+            </Link>
           </div>
           <Nav isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
