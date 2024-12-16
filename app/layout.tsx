@@ -41,7 +41,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta property="og:title" content="Johndiddles Place" key="title" />
+        <meta property="og:title" content="John Adepelumi" key="title" />
         <meta property="og:image:width" content="748" />
         <meta property="og:image:height" content="196" />
         <meta
