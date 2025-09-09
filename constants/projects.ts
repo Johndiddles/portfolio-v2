@@ -1,11 +1,24 @@
 import { Project } from "@/types/projects";
 import DliLibraryImage from "@/assets/Images/dli-library.svg";
+import SnipCityImage from "@/assets/Images/snipcity.svg";
 import ReshiitoImage from "@/assets/Images/reshiito.svg";
 import RagauNGImage from "@/assets/Images/ragaung.svg";
 import MiddlechaseImage from "@/assets/Images/middlechase.svg";
 // import RistoranteConFusion from "@/assets/Images/ristorante-con-fusion.svg";
 
 export const AllProjects: Project[] = [
+  {
+    title: "SnipCity",
+    description:
+      "SnipCity was created to solve a simple problem: developers often write useful code snippets that get lost in the depths of their file systems. We believe that great code should be shared, discovered, and reused by the community. Our platform makes it easy to store, organize, and share your most valuable code snippets while discovering solutions from other talented developers.",
+    tools: ["Next JS", "Typescript", "Mongo DB"],
+    status: "in_progress",
+    canViewCode: true,
+    canViewProject: true,
+    github_repo_url: "https://github.com/Johndiddles/snipcity",
+    project_live_url: "https://snipcity.vercel.app",
+    thumbnail_url: SnipCityImage,
+  },
   {
     title: "DLi Library",
     description:
