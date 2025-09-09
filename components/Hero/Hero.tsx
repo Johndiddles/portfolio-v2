@@ -17,7 +17,7 @@ const Hero = () => {
           <p className="font-light hero_caption leading-[28px] sm:leading-[32px] md:leading-[40px] lg:leading-[48px] xl:leading-[50px] max-w-[96ch] mx-auto font-inter">
             Results-driven Software Engineer with expertise in JavaScript,
             TypeScript, React, Node.js, and AWS. Contributed to the
-            actualization of a $1.2M grant at Evon Medics LLC by automating data
+            actualization of a $2.8M grant at Evon Medics LLC by automating data
             recovery and restoring over 6,000 critical data points, while
             re-engineering authentication workflows to enhance scalability for
             clinical trials. At Broadshift Technologies, developed a shift
