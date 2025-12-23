@@ -11,7 +11,7 @@ const Footer = () => {
               <li>
                 <a
                   className="underline underline-offset-4 hover:decoration-[#C47B54]"
-                  href={`https://wa.me/2428288399/?text=${"Hi John! Let's do something together."}`}
+                  href={`https://wa.me/12428288399/?text=${"Hi John! Let's do something together."}`}
                 >
                   Whatsapp
                 </a>
