@@ -4,9 +4,21 @@ import SnipCityImage from "@/assets/Images/snipcity.svg";
 import ReshiitoImage from "@/assets/Images/reshiito.svg";
 import RagauNGImage from "@/assets/Images/ragaung.svg";
 import MiddlechaseImage from "@/assets/Images/middlechase.svg";
+import DomeasolidImage from "@/assets/Images/domeasolid.svg";
 // import RistoranteConFusion from "@/assets/Images/ristorante-con-fusion.svg";
 
 export const AllProjects: Project[] = [
+  {
+    title: "Domeasolid",
+    description:
+      'DoMeASolid is a creator-first affiliate platform designed to bridge the gap between influencers, shoppers, and brands. By utilizing a smart browser extension and a centralized creator portal, the brand ensures influencers receive 100% of their earned attribution while providing shoppers with seamless access to verified deals at checkout. Built on the philosophy of mutual support, the ecosystem turns promo codes into a "teammate" for creators, protecting their commissions from traditional last-click attribution loss.',
+    tools: ["Next JS", "Typescript", "Express JS", "Supabase", "Stripe"],
+    status: "completed",
+    canViewCode: false,
+    canViewProject: true,
+    project_live_url: "https://app.domeasolid.co",
+    thumbnail_url: DomeasolidImage,
+  },
   {
     title: "SnipCity",
     description:
