@@ -27,10 +27,70 @@ const jost = Jost({
 });
 
 export const metadata: Metadata = {
-  title: "Johndiddles Place",
-  description: "Welcome to Johndiddles Place.",
-  keywords:
-    "John Adepelumi, Johndiddles, Software developer, frontend developer, full stack developer, web developer, web development, Javascript, Typescript, Next JS, React JS, Node JS, Express, Vue, Tailwind, Redux, Zustand",
+  metadataBase: new URL(CLIENT_ORIGIN),
+  title: {
+    default: "John Adepelumi | Full Stack Engineer | Software Engineer",
+    template: "%s | John Adepelumi",
+  },
+  description:
+    "John Adepelumi is a full stack engineer based in the Bahamas specializing in building exceptional digital experiences with Next.js, TypeScript, and modern web technologies.",
+  keywords: [
+    "John Adepelumi",
+    "Johndiddles",
+    "Software developer",
+    "Frontend developer",
+    "Full stack engineer",
+    "Web developer",
+    "Bahamas developer",
+    "Next.js",
+    "React",
+    "TypeScript",
+    "JavaScript",
+    "Tailwind CSS",
+    "Java",
+    "Spring Boot",
+  ],
+  authors: [{ name: "John Adepelumi", url: CLIENT_ORIGIN }],
+  creator: "John Adepelumi",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: CLIENT_ORIGIN,
+    title: "John Adepelumi | Full Stack Engineer | Software Engineer",
+    description:
+      "John Adepelumi is a full stack engineer based in the Bahamas specializing in building exceptional digital experiences.",
+    siteName: "John Adepelumi Portfolio",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "John Adepelumi - Full Stack Engineer",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "John Adepelumi | Full Stack Engineer | Software Engineer",
+    description:
+      "John Adepelumi is a full stack engineer based in the Bahamas specializing in building exceptional digital experiences.",
+    images: ["/opengraph-image.png"],
+    creator: "@Diddlescode",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  alternates: {
+    canonical: CLIENT_ORIGIN,
+  },
 };
 
 export default function RootLayout({
@@ -40,15 +100,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <meta property="og:title" content="John Adepelumi" key="title" />
-        <meta property="og:image:width" content="748" />
-        <meta property="og:image:height" content="196" />
-        <meta
-          property="og:image"
-          content={`${CLIENT_ORIGIN}/opengraph-image.png`}
-        />
-      </head>
       <body
         className={`${inter.variable} ${poppins.variable} ${jost.variable}  antialiased`}
       >
